@@ -135,7 +135,7 @@ if(isset($_GET['v'])){
       <span class="txt2 ricon h5">Popular</span>
     </div>
     <div class="col-4 text-right sm-p">
-      <a href="./content.php?cont=trending" title="More" target="_blank" class="icontext h6 pl-1 ">更多<i class="fa d-inline fa-lg fa-angle-double-right"></i></a>
+      <a href="./content.php?cont=trending" title="More" target="_blank" class="icontext h6 pl-1 ">More<i class="fa d-inline fa-lg fa-angle-double-right"></i></a>
     </div>
   </div>
          
