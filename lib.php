@@ -427,8 +427,7 @@ function html5_player($id){
     $yt = new YouTubeDownloader();
     $links = $yt->getDownloadLinks('https://www.youtube.com/watch?v='.$id);
     if(count($links)!=1){
-        echo'<video id="h5player"  class="video-js vjs-fluid mh-100 mw-100" loop="loop" width="100%" preload="auto"  webkit-playsinline="true" playsinline="true" x-webkit-airplay="true" controls="controls" controls preload="auto" width="100%" poster="./thumbnail.php?type=maxresdefault&vid='.$id.'" data-setup=\'\'>';
-        
+        echo'<iframe src="http://yoursite.com/proxy.php?www.youtube.com/embed/'.$id .'" frameborder="0" allowfullscreen></iframe>';
         //获取视频分辨率
         if(array_key_exists('22',$links)){
         echo '<source src="./vs.php?vv='.$id.'&quality=720" type=\'video/mp4\' res="720" label=\'720P\'/>';   
